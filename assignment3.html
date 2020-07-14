@@ -1,0 +1,32 @@
+<!--
+    Write a JavaScript program to get the current date.
+    Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy 
+-->
+
+<html>
+    <head><title>day-2 assignment-3</title></head>
+<body>
+    <div id='op'></div>
+    <script>
+        var mm,yy,dd,cur_date;
+        var months = ['Jan','Frb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        cur_date = Date();
+        //cur_date = new Date(2020,5,4,7,3,2);
+        
+        //document.write(typeof cur_date);
+        //document.write(cur_date);
+        dd = cur_date.slice(8,10);
+
+        mm = months.indexOf(cur_date.slice(4,7)) + 1;
+        if (mm < 10)   // if mm is single digit (nb: array index )
+            mm = '0'+mm;
+        yy = cur_date.slice(11,15);
+        document.getElementById('op').innerHTML=mm + '-' + dd + '-' + yy + ',' +
+        mm + '/' + dd + '/' + yy + ' or ' + dd + '-' + mm + '-' + yy + ',' +
+        dd + '/' + mm + '/' + yy ;
+
+        //mm = cur_date.slice()
+        
+    </script>
+</body>
+</html>
