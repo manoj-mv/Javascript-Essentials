@@ -1,0 +1,18 @@
+Qn. Write the difference between var, let and const with code examples.
+
+    - 'var' is used to declare variables with global scope.
+    - 'let' is used to declare variables with local scope.
+    -  Declaring variable using 'var' may leads to conflicts.
+    -  Best practise is to use 'let'.
+
+    eg: var name = 'abc'
+        var test_var = 'xyz';
+        console.log('value of "test_var" at begining:  '+test_var);
+
+        if (name = 'abc'){
+            let test_var = 95;
+            console.log('value of "test_var" inside local scope:  '+test_var );
+        }
+        console.log("checking value of 'test_var' after exiting local scope :  "
+        +test_var  );
+

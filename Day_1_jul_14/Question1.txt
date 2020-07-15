@@ -1,0 +1,77 @@
+Qn. Explore and explain the various methods in console function?
+
+console object
+--------------
+Console object give access to browser's debugging console.
+
+    ->it provides various methods,
+
+    1. console.log()
+    ----------------
+    - mainly used to log/print messages/output to web console.
+        eg. console.log(['a','b','c']); //printing array to Console
+            console.log({a:1,f:6});     //printing object to console
+
+    2. console.error()
+    ------------------
+    - used to log error messages in web console.
+    - used for testing purposes
+    - errors are printed in red.
+        eg: console.error('error ocuured');
+
+    3. console.warn()
+    -----------------
+    - used to log warning to the console.
+    - heilighted in yellow color.
+        eg : console.warn('warning message');
+
+    4. console.clear()
+    ------------------
+    - used to clear the console.
+        eg: console.clear();
+
+    5.console.time() and console.timeEnd()
+    ----------------
+    - Used to find amount of time needed for execute a specific code segment.
+    - Can given label as argument.
+        eg: console.time();
+            ---code segment begin---
+            ....
+            ....
+            ---code segment end---
+            console.timeEnd()
+
+    6. console.table()
+    ------------------
+    - Used to generate table inside console.
+    - Input must be array or object.
+        eg : console.table(['a','b','c']);
+             console.table({a:3,b:5,name:'abc'})
+
+    7. console.count()
+    ------------------
+    - write to the console the number of times tha particular console.count() is called.
+        eg : for(let i = 0; i<5; i++)
+                console.count();
+    
+    8. console.group() and console.groupEnd(), console.groupCollapsed()
+    -------------------------------------------------------------------
+    - group console messages bound to a specific task.
+    - label name should included
+    - Messages inside the group is hidden by collapse break point.
+    - console.groupCollapsed() is used to collapse only the messges before a particular point inside the group. 
+        eg: console.log ('messages bound to task x');
+            msg1..
+            msg2..
+            mseg3..
+            console.groupCollapsed(); //all messge before this point will be collapsed
+            msg4..
+            msg4..
+            console.groupEnd();
+    
+    9. custiomize console messages
+    ------------------------------
+    - it is possible to customize console message with different styles.
+    - %c is used as placeholder for css style property
+        eg: console.log('%c color green','color:green;font-size:20px;')
+

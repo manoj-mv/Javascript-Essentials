@@ -1,0 +1,42 @@
+Qn. Write a brief intro on available data types in Javascript?
+
+    1. Number
+    ---------
+    - Represents integer and floating point numbers.
+        eg: let x = 12;
+            x = 23.55;
+
+    2. String
+    --------
+    - Characters enclosed by quotes.
+    - ${…} is used to embed variables and expression in string.
+        eg: lname = 'xy'
+            fname = 'abc';
+            full_name = "abc ${lname}";
+
+    3. boolean
+    -----------
+    - onlt two values : true and false
+        eg: flag = true;
+    
+    4. null
+    --------
+    - indicates variable is empty or value unknoown.
+    - javascript considers as type of object
+        eg: x = null;
+    
+    5. undefined
+    -------------
+    - indicates value is not assigned.
+    - it is possible to assign value 'undefined' explicitly.
+        eg: let y;
+    
+    6. array
+    - List  of homogeneous data
+        eg : let x =['a','b']
+    
+    7. objects
+    -----------
+    - key : value pairs similar to dictionary in python
+        eg: person = { name : 'abc', age: 20 };
+            

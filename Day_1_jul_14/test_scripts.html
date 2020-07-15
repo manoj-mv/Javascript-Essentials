@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        console.log('%c Question1 Tests','color:green;font-size:20px;')
+        console.time();
+        let array =['a','b','c']
+        let obj = {a:1,f:6,d:67,name:'mv'}
+        console.log(array); //printing array to Console
+        console.log({a:1,f:6});     //printing object to console
+        console.error('error ocuured'); //error
+        console.warn('warning message');
+        console.table(array);
+        console.table(obj);
+
+        //count()
+        for(let i = 0; i<5; i++){
+            console.count(i);
+            console.count();
+        }
+
+        //group() test
+        console.group('messege respect to x process');
+        console.log({a:1,f:6});     //printing object to console
+        console.error('error ocuured'); //error
+        console.warn('warning message');
+        console.table(array);
+        console.groupCollapsed();
+        console.table(obj);
+        console.groupEnd()
+
+        //custom log
+        console.log('%c color grey','color:grey;font-size:20px;')
+
+
+        console.timeEnd();
+
+        console.log('%c Question2 Test','color:green;font-size:20px;')
+
+        // let, var difference
+        var name = 'abc'
+        var test_var = 'xyz';
+        console.log('value of "test_var" at begining:  '+test_var);
+
+        if (name = 'abc'){
+            let test_var = 95;
+            console.log('value of "test_var" inside local scope:  '+test_var );
+        }
+        console.log("checking value of 'test_var' after exiting local scope :  "
+        +test_var  );
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
