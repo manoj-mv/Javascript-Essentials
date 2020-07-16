@@ -1,0 +1,75 @@
+Qn. Explain with examples the remaining methods of String and Array.
+
+String methods
+==============
+    1. search()
+    ----------
+    - search for specified value and returns the starting position of the match.
+    - indexOf() != seach(): indexOf() doesn't work with regular expression and seach() only takes one argument.
+        eg: let txt = 'Sun rises in the east';
+            txt.search('in') //returns 10   
+
+    2. slice()
+    ----------
+    - Extracts a part of a String
+    - Take two parameters : start position and end position
+    - If paramerter is negative,position is counted from end of the string.
+        eg: console.log(txt.slice(10,12)) // returns 'is'
+            console.log(txt.slice(-4,0)) // returns 'east'
+
+    3. substring()
+    ---------------
+    - similar to slice(),but can't take negative number as argument.
+        eg: txt.substring(10,12) // returns 'in'
+
+    4. substr()
+    ------------
+    - Similar to slice(),but secon argument specifies the length of the substring to be extracted.
+        eg: txt.substr(4,5) // returns 'rises'
+
+    5. replace()
+    ------------
+    - replace specified value with another string and returns new string.
+    - argument is case sensitive. replace() may use as insensitive method by using specified format'/sTrInG/i'.
+        eg:txt.replace('east','xxx');
+           txt.replace(/EaSt/i,'xxx');
+
+    6.trim()
+    --------
+    - Removes white spaces from both sides.
+        eg : txt.trim();
+
+
+Array methods
+==============
+    1.toString()
+    ------------
+    - converts an array to a string of (comma separated) array values.
+        eg: let arr = ['a','b','c','d'];
+            arr.toString();
+
+    2. join()
+    ----------
+    - Similar to toString(),apart from that it joins array element using specified argument.
+        eg: arr.join('*')
+
+    3. splice()
+    -----------
+    - used to delete specified number of items  and add new items to an array.
+    - first parameter indicates the position whrer new element should be added or removed.
+    - second parameter defines how many elements should be removed.
+    -rest of the parameters are new elements to be added.
+        eg:arr.splice(2,1);
+        arr.splice(2,0,'m','n'));
+    
+    4. concat()
+    ------------
+    - Create a new array by merging existing array.
+        eg: arr1.concat(arr2,arr3);
+    
+    5.slice()
+    -----------
+    - slice out a part of an array.
+    - two parameters: start index,end index
+        eg: arr.slice(2,4);
+
