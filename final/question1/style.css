@@ -1,0 +1,69 @@
+.todo {
+    margin:auto;
+    width: 50%;
+    border: 2px solid whitesmoke ;
+    border-style: outset;
+    box-shadow:rgb(107, 107, 89) ;
+    padding: 20px 10px 20px 10px;
+    text-align : center;
+    background-color: #1abc9c;
+    font-family: monospace;
+    color: white;
+}
+
+.to_disp{
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 20%;
+    text-align: left;
+}
+body{
+    margin:100px 10px 10px 10px;
+    /* border: 2px solid black; */ */
+    /* background-color :gainsboro; */
+    
+    
+}
+.butt{
+    background-color: #009973;
+    padding:5px;
+    width:10%;
+    color: #FFFFFF;
+}
+#todo_form{
+    margin-top: 20px;
+    padding: 10px;
+}
+#item{
+    width: 50% ;
+    height: 25px;
+}
+html{
+    background: linear-gradient(-30deg, #d0b782 20%, #a0cecf 80%);
+    background-repeat: repeat-x;
+    height: 100%;
+}
+hr{
+    margin-left: 0px;;
+    width: 70%;
+}
+
+.butt:hover{
+    background-color: #00664b;
+}
+
+.clr{
+    margin-top: 20px;
+    visibility: hidden;
+    width:30%
+}
+#clrl{
+    /* visibility: hidden; */
+    width: 53% ;
+    margin-left: 22%;
+    margin-top: 10px;
+    text-align: left;
+    /* text-align: left; */
+}
+
+

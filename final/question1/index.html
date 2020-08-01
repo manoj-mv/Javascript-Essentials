@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="todo">
+        <label for="heading"><h1>Todo List</h1></label>
+        <form action="#" method="get" name = 'todo_form' id ='todo_form'>
+            
+            <input type="text" name="entry" id="item" autofocus>
+            <button type="button" name ='btn' class = 'butt' >Add</button><br>
+            
+            <!-- <div class = 'to_disp' id='completed'>
+                <label for ='completed'>Done</label><hr>
+            </div> -->
+            
+            <div class = 'to_disp' id='not_completed'>
+                <label for ='not_completed'>(Select if completed)</label><hr>
+                <div id='show'></div>
+            </div>
+            <hr id = 'clrl'>
+            
+            <button type="button" name ='clear' class = 'butt clr'   >Clear Completed</button><br>
+        </form>
+        
+    </div>
+</body>
+</html>
